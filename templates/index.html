@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Financial Guardian</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="appTitle">Financial Guardian</h1>
+    <div class="right-controls">
+      <div class="notifications">
+        <button id="notifyBtn" class="notify" title="Notifications">🔔<span id="notifyBadge" class="badge">0</span></button>
+        <div id="notifyMenu" class="notify-menu hidden"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="view-dashboard" class="view">
+      <section class="cards">
+        <div class="card">
+          <div class="card-icon">💰</div>
+          <div class="card-title">Income</div>
+          <div class="card-value" id="incomeValue">₹0</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🧾</div>
+          <div class="card-title">Expenses</div>
+          <div class="card-value" id="expensesValue">₹0</div>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏦</div>
+          <div class="card-title">Savings</div>
+          <div class="card-value" id="savingsValue">₹0</div>
+        </div>
+        <div class="card progress-card">
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Goals Progress</div>
+          <div class="progress-wrap">
+            <div id="progressBar" class="progress-bar"><span id="progressPercent">0%</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="motivation">
+        <div class="streak">
+          <h2>🔥 Streak</h2>
+          <div id="streakCount" class="streak-count">0</div>
+          <small id="lastActive">Last active: -</small>
+          <button id="updateActiveBtn" class="primary">Mark Active</button>
+        </div>
+        <div class="mascot">
+          <img src="/static/images/fox.png" alt="Mascot" class="mascot-img" />
+          <div class="mascot-text">Keep Going!</div>
+          <button id="downloadWallpaper" class="primary">Set as Lock Screen Wallpaper</button>
+        </div>
+      </section>
+
+      <section class="transactions">
+        <h3>Recent Transactions</h3>
+        <ul id="transactionsList"></ul>
+      </section>
+    </section>
+
+    <section id="view-transactions" class="view hidden">
+      <h2>Transactions</h2>
+      <form id="addTxForm" class="card form-card">
+        <label>Title <input type="text" id="txTitle" required></label>
+        <label>Type
+          <select id="txType"><option value="expense">Expense</option><option value="income">Income</option></select>
+        </label>
+        <label>Category <input type="text" id="txCategory" value="General"></label>
+        <label>Amount <input type="number" id="txAmount" required></label>
+        <label>Date <input type="date" id="txDate"></label>
+        <button type="submit" class="primary">Add Transaction</button>
+      </form>
+
+      <div class="card">
+        <h3>All Transactions</h3>
+        <ul id="allTransactions"></ul>
+      </div>
+    </section>
+
+    <section id="view-budget" class="view hidden">
+      <h2>Budgets</h2>
+      <form id="addBudgetForm" class="card form-card">
+        <label>Category <input type="text" id="budgetCategory" required></label>
+        <label>Limit <input type="number" id="budgetLimit" required></label>
+        <button type="submit" class="primary">Add / Update Budget</button>
+      </form>
+
+      <div class="card">
+        <h3>Your Budgets</h3>
+        <ul id="budgetsList"></ul>
+      </div>
+    </section>
+
+    <section id="view-profile" class="view hidden">
+      <h2>Profile</h2>
+      <form id="profileForm" class="card form-card">
+        <label>Name <input type="text" id="profileName" required></label>
+        <label>Savings <input type="number" id="profileSavings" required></label>
+        <button type="submit" class="primary">Save Profile</button>
+      </form>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-target="view-dashboard">Dashboard</button>
+    <button class="nav-btn" data-target="view-transactions">Transactions</button>
+    <button class="nav-btn" data-target="view-budget">Budget</button>
+    <button class="nav-btn" data-target="view-profile">Profile</button>
+  </nav>
+
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>

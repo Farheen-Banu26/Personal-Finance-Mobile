@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Flask (app.py)",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/app.py",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "env": {
+        "FLASK_ENV": "development"
+      },
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Demo User",
+      "savings": 2500.0,
+      "transactions": [
+        {
+          "id": "t1",
+          "title": "Salary",
+          "type": "income",
+          "amount": 5000,
+          "date": "2025-08-20",
+          "category": "Salary"
+        },
+        {
+          "id": "t2",
+          "title": "Groceries",
+          "type": "expense",
+          "amount": 1200,
+          "date": "2025-08-22",
+          "category": "Food"
+        },
+        {
+          "id": "9473b045-1037-450b-986c-871de9c2adfc",
+          "title": "book",
+          "type": "expense",
+          "amount": 8000.0,
+          "date": "2025-09-19",
+          "category": "General"
+        }
+      ],
+      "goals": [
+        {
+          "id": "g1",
+          "title": "Emergency Fund",
+          "target": 10000,
+          "progress_percent": 25
+        }
+      ],
+      "streak": {
+        "count": 3,
+        "last_active": "2025-08-28"
+      },
+      "budgets": [
+        {
+          "id": "b1",
+          "category": "Food",
+          "limit": 1000
+        },
+        {
+          "id": "b2",
+          "category": "Transport",
+          "limit": 500
+        },
+        {
+          "id": "99ff3a1a-eb64-447d-9186-b7862f0fed53",
+          "category": "groceary",
+          "limit": 4000.0
+        }
+      ]
+    }
+  ]
+}
