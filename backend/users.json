@@ -2,32 +2,64 @@
   "users": [
     {
       "id": 1,
-      "name": "Demo User",
-      "savings": 2500.0,
+      "name": "Farheen",
+      "savings": 4000.0,
       "transactions": [
         {
-          "id": "t1",
+          "id": "722347c4-b83c-4017-bd84-6516b279df8f",
           "title": "Salary",
           "type": "income",
-          "amount": 5000,
-          "date": "2025-08-20",
-          "category": "Salary"
-        },
-        {
-          "id": "t2",
-          "title": "Groceries",
-          "type": "expense",
-          "amount": 1200,
-          "date": "2025-08-22",
-          "category": "Food"
-        },
-        {
-          "id": "9473b045-1037-450b-986c-871de9c2adfc",
-          "title": "book",
-          "type": "expense",
-          "amount": 8000.0,
-          "date": "2025-09-19",
+          "amount": 10000.0,
+          "date": "2025-09-12",
           "category": "General"
+        },
+        {
+          "id": "62355fd8-ae00-401a-a7c8-b3a88742476d",
+          "title": "Books",
+          "type": "expense",
+          "amount": 2500.0,
+          "date": "2025-09-12",
+          "category": "General"
+        },
+        {
+          "id": "18420627-077f-4be6-b139-d56b380f2f47",
+          "title": "Food",
+          "type": "expense",
+          "amount": 600.0,
+          "date": "2025-09-12",
+          "category": "General"
+        },
+        {
+          "id": "679fe22f-f1aa-423b-bf5b-1ced22694dd2",
+          "title": "Hackathon prize",
+          "type": "income",
+          "amount": 40000.0,
+          "date": "2025-09-12",
+          "category": "DevSparks"
+        },
+        {
+          "id": "19447d3d-61b6-43b0-9992-ab6e75531561",
+          "title": "RK",
+          "type": "expense",
+          "amount": 100.0,
+          "date": "2025-09-12",
+          "category": "food"
+        },
+        {
+          "id": "a4e15ce9-d175-48dc-9c0c-5fab209a774c",
+          "title": "prize",
+          "type": "income",
+          "amount": 85000.0,
+          "date": "2025-09-12",
+          "category": "money"
+        },
+        {
+          "id": "a5c0eec9-f055-44ea-be2b-a67684bd81d7",
+          "title": "dress",
+          "type": "expense",
+          "amount": 5000.0,
+          "date": "2025-09-13",
+          "category": "shopping"
         }
       ],
       "goals": [
@@ -39,23 +71,13 @@
         }
       ],
       "streak": {
-        "count": 3,
-        "last_active": "2025-08-28"
+        "count": 1,
+        "last_active": "2025-09-12"
       },
       "budgets": [
         {
-          "id": "b1",
-          "category": "Food",
-          "limit": 1000
-        },
-        {
-          "id": "b2",
-          "category": "Transport",
-          "limit": 500
-        },
-        {
-          "id": "99ff3a1a-eb64-447d-9186-b7862f0fed53",
-          "category": "groceary",
+          "id": "8d5e0ad5-6597-49d0-9ef7-01ebf865b9ae",
+          "category": "shopping",
           "limit": 4000.0
         }
       ]
